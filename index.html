@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>My Cooking Diary</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        
+        <!-- Vendor CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/glightbox@3.1.0/dist/css/glightbox.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.5/swiper-bundle.min.css" rel="stylesheet">
+        
+      
+        <!-- Main CSS File -->
+        <link href="css/style.css" rel="stylesheet">
+      
+<!-- FOR ADD A drawer we required this -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="index container-fluid">
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg  fade-in fixed-top">
+    <div class="container" >
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" width="80" height="70" style="border-radius: 50%;">
+          </a>
+          <button class="navbar-toggler text-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon text-white"></span>
+            </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left: 250px;">
+              <li class="nav-item"><a href="index.html" class="nav-link"><b>Home</b></a></li>
+              <li class="nav-item"><a href="chef'sspecial.html" class="nav-link"><b>Chef’s Specials</b></a></li>
+              <li class="nav-item"><a href="tipstrick.html" class="nav-link"><b>Tips & Tricks</b></a></li>
+              <li class="nav-item"><a href="recipes.html" class="nav-link"><b>Recipies</b></a></li>
+              <li class="nav-item"><a href="team.html" class="nav-link"><b>Team</b></a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link"><b>Contact</b></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- header Close -->
+  <!--Hero Section Start -->
+    <section id="hero" class="hero section dark-background">
+        <div id="hero-carousel" data-bs-interval="5000" class="carousel carousel-fade" data-bs-ride="carousel">
+        
+          <!-- Slide 1 -->
+          <div class="carousel-item active slide1">
+            <div class="carousel-container">
+              <h2 id="heading" class="animate__animated animate__fadeInDown mt-5">Welcome to My Cooking Diary</h2>
+              <p class="animate__animated animate__fadeInUp m" style="font-size: 15px;">Step into a world where every dish tells a story.We believe in the magic of food. Our expert chefs combine fresh, local ingredients with time-honored techniques to create meals are  delicious.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto mb-5" style="background-color: #F14A00; color: white; border-radius: 30px 0px 30px 30px;border: 1px solid white;">Read More</a>
+            </div>
+          </div>
+        
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="carousel-container ">
+              <h2 id="heading" >"Discover the Taste of Excellence"</h2>
+              <p style="font-size: 15px;">Every meal at our restaurant is crafted with passion and precision. From the first bite to the last, we strive to bring you the finest flavors, made with love and the freshest ingredients. Our menu blends classic recipes with modern twists.</p>
+              <a href="#about" class="btn-get-started  scrollto mb-5" style="background-color: #F14A00; color: white; border-radius: 30px 0px 30px 30px;border: 1px solid white;">Read More</a>
+            </div>
+          </div>
+        
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <h2 id="heading">"Where Passion Meets Flavor"</h2>
+              <p  style="font-size: 15px;">Welcome to a place where food is more than just nourishment—it’s an experience. Our chefs use only the finest ingredients to create dishes that delight the senses and warm the heart.</p>
+              <a href="#about" class="btn-get-started  scrollto mb-5" style="background-color: #F14A00; color: white; border-radius: 30px 0px 30px 30px;border: 1px solid white;">Read More</a>
+            </div>
+          </div>
+        
+          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+        
+          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+        
+        </div>
+      </section>
+    <!--Hero Section Close-->
+   
+      
+
+      <!-- Slide grid -->
+      <section id="featured-dishes" class="container-fluid text-center" style="width: 100%;">
+        <h2 class="mt-md-3 mb-md-3 a">Our Featured Dishes</h2>
+      
+        <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            
+            <!-- First slide -->
+            <div class="mydish carousel-item active">
+              <div class="row">
+                <div class="dish col-lg-3  col-sm-7 mr-5">
+                  <div class="card">
+                    <img src="images/s1.jpeg" alt="Dish 1" class="img-fluid" style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Spaghetti</h5>
+                      <p class="card-text">This dish is a unique twist on the traditional Rogan Josh curry, where tender spaghetti noodles are tossed with a rich, aromatic lamb curry sauce.</p>
+                      <a href="#order" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="dish col-lg-3 col-sm-7">
+                  <div class="card">
+                    <img src="images/s4.jpg" alt="Dish 2" class="img-fluid"  style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Kesar Phirni</h5>
+                      <p class="card-text">This creamy, saffron-infused rice pudding is a popular Kashmiri dessert. It’s made from ground rice, milk, sugar flavor profile.</p>
+                      <a href="#order" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dish  col-lg-3 col-sm-7">
+                    <div class="card">
+                      <img src="images/s7.jpg" alt="Dish 2" class="img-fluid"  style="width: 100%; height: 200px;">
+                      <div class="card-body">
+                        <h5 class="card-title"> Spicy Fish Tacos</h5>
+                        <p class="card-text">Lightly battered fish fillets served in soft tortillas with a tangy slaw, avocado. A perfect combination of crispy and flavors Chees.</p>
+                        <a href="#order" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                <div class=" dish col-lg-3  col-sm-7">
+                  <div class="card" >
+                    <img src="images/s5.jpg" alt="Dish 3" class="img-fluid"  style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sindhi Biryani</h5>
+                      <p class="card-text">A bold and spicy biryani, Sindhi Biryani features an intense mix of green chilies. The dish is known for its spicy kick and flavors.</p>
+                      <a href="#order" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Second slide -->
+            <div class="carousel-item mydish">
+              <div class="row">
+                <div class="col-lg-3 col-sm-7 dish ">
+                  <div class="card">
+                    <img src="images/s2.jpeg" alt="Dish 4" class="img-fluid"  style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                      <h5 class="card-title"> Spaghetti Carbonara</h5>
+                      <p class="card-text">A classic Italian favorite, Spaghetti Carbonara is made with al dente spaghetti, crispy pancetta, and a creamy egg-based sauce. </p>
+                      <a href="#order" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-7 dish ">
+                    <div class="card">
+                      <img src="images/10.jpeg" alt="Dish 4" class="img-fluid"  style="width: 100%; height: 200px;">
+                      <div class="card-body">
+                        <h5 class="card-title">Vanilla Dream Cupcakes</h5>
+                        <p class="card-text">Delicately soft and fluffy, these Vanilla Dream Cupcakes are topped with a rich, creamy buttercream frosting.Ideal for any occasion.</p>
+                        <a href="#order" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                <div class="col-lg-3  col-sm-7 dish ">
+                  <div class="card">
+                    <img src="images/s6.jpeg" alt="Dish 5" class="img-fluid"  style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Pepperoni Pizza</h5>
+                      <p class="card-text">A crowd favorite with savory pepperoni slices, melted cheese, and a rich tomato sauce on a perfectly crisp crust.</p>
+                      <a href="#order" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                
+      
+                <div class="col-lg-3  col-sm-7  dish ">
+                  <div class="card" style="width: 300px;">
+                    <img src="images/6.jpeg" alt="Dish 6" class="img-fluid"  style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                      <h5 class="card-title">The Classic Cheeseburger</h5>
+                      <p class="card-text pr-5"> A juicy, tender beef patty topped with melted cheddar cheese crisp pickles. A timeless favorite for burger lovers!</p>
+                      <a href="#order" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+      <!-- slide grid close -->
+      
+      <!-- Cooking Section -->
+      <section id="cooking" class="container-fluid about ml-5 pt-5 pl-5" data-aos="fade-up">
+        <div class="row px-2">
+            <div class="col">
+                <div style="text-align: center; font-family: Arial, sans-serif; display: inline-block;">
+                    <span class="center" style="letter-spacing: 2px; font-size: 15px;color:black; vertical-align: middle;">Cooking</span>
+                    <span style="display: inline-block; width: 50px; height: 2px; background-color:#F14A00; margin-left: 10px; vertical-align: middle;"></span>
+                </div>
+                <h2 style="font-size: 24px; font-weight: 700;color:black;">WHAT WE COOK</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 p-sm-4 mt-sm-n5" data-aos="fade-left">
+              <p>
+                Explore the art of cooking with our handpicked recipes and culinary tips designed to bring out the chef in you. From traditional classics to modern fusion dishes, we bring you step-by-step instructions and expert advice to make every meal a masterpiece. Whether you're preparing a quick weeknight dinner or hosting an elaborate feast, our resources will inspire creativity and confidence in the kitchen.
+            </p>
+            <ul class="icon-list">
+              <li><i class="bi bi-check2-circle" style="color: #F14A00;"></i> <span>Fresh and locally sourced ingredients for every recipe.</span></li>
+              <li><i class="bi bi-check2-circle" style="color: #F14A00;"></i> <span>Step-by-step guides for beginners and experts alike.</span></li>
+              <li><i class="bi bi-check2-circle" style="color: #F14A00;"></i> <span>Healthy and delicious meal options for all tastes.</span></li>
+              <li><i class="bi bi-check2-circle" style="color: #F14A00;"></i> <span>Quick and easy recipes for busy schedules.</span></li>
+          </ul>
+          <button class="btn read-more ml-4" style="background-color: #F14A00; color: white;">Explore Recipes <i class="bi bi-arrow-right"></i></button>
+                
+            </div>
+            <div class="col-md-4 ml-sm-5" data-aos="fade-right">
+            <img  src="images/m3.jpg" alt="" width="100%" style="border-radius: 12px;">
+          </div>
+        </div>
+    </section>
+      
+   
+<!-- Call to Action -->
+<div class="container-fluid call-to-action text-white align-content-center py-2" data-aos="fade-up">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="display-5 delicious" data-aos="fade-up"><b>Burger Sale Extravaganza UPTO 20% OFF!</b></h2>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col-md-6 pl-3 px-5 ">
+          <p class="lead" data-aos="fade-up">Get your favorite burgers at unbelievable prices. Don't miss out!.A succulent, juicy beef patty cooked to perfection, topped with a generous layer of melted, creamy cheese</p>
+          <h6 data-aos="fade-up">
+            <span class="text-decoration-line-through text-muted " >$7.99</span>
+            <span class="sale">Now $5.99</span><br><br>
+            <button class="btn btn-danger text-white  rounded-pill read-more" style="width: 150px; height: 50px;"data-aos="fade-up">Call To Action</button> 
+          </h6>
+        </div>
+        <!-- <div class="col-md-4">
+           <img src="images/br1.png" alt="" width="100%" height="300px"> 
+          
+        </div> -->
+        <div class="col-md-6 col-12 col-sm-7">
+          <img src="images/burger-8743791_640-removebg-preview.png" alt="" width="55%" height="250px" data-aos="fade-left" > 
+          <img src="images/bur2.png" alt="" width="40%" height="250px" data-aos="fade-right">
+        </div>
+        
+    </div>
+</div>
+
+
+
+<!-- Services -->
+<div class="container-fluid py-3 px-3 services">
+        <div class="col">
+            <div style="text-align: center";>
+                  <h2 class="justify-content-center k " style="font-size: 30px; font-weight: 600; color:black; margin-top: 10px;">Experience the Ultimate Bite!</h2>
+               
+              <h5 class="justify-content-center; mb-5 k" style="font-size: 24px; font-weight: 500; color: black;">"The Latest Trends and Recipes from My Cooking Dairy"</h5>
+            </div>
+            <p class="text-muted text-center">Most Recent Post</p>
+        </div>
+    
+    <div class="row" id="section kk">
+        <div class="col-12 col-md-6 col-lg-4 offer">
+          <div class="service-item position-relative">
+            <div class="icon">
+                <!-- Replace with a dish icon -->
+               <img src="images/b1.png.webp" alt="" width="120px" height="100px" style="border-radius: 60%;box-shadow: 2px 2px 5px 5px gray;" data-aos="fade-right">
+            </div>
+            <a href="">
+                <h3 data-aos="fade-up">Special Biryani</h3>
+            </a>
+            <p data-aos="fade-up">
+                Indulge in our flavorful and aromatic biryani, crafted with premium spices and tender meat for a perfect blend of taste and tradition.
+            </p>
+            <div class="d-flex justify-content-between align-items-center" data-aos="fade-up">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-left: 20px; background-color: #F14A00;"><a href="new.html#recipe5">View</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">5 mins</small>
+            </div>
+        </div>
+        
+        </div><!-- End Service Item -->
+        <div class="col-md-6 col-lg-4 offer">
+          <div class="service-item position-relative">
+            <div class="icon">
+                <!-- Pasta-related icon -->
+              <img src="images/s2.jpeg" alt="" width="120px" height="100px" style="border-radius: 60%;box-shadow: 2px 2px 5px 5px gray;"data-aos="fade-right">
+            </div>
+            <a href="">
+                <h3 data-aos="fade-up">Creamy Alfredo Pasta</h3>
+            </a>
+            <p data-aos="fade-up">
+                Savor our creamy Alfredo pasta, made with a rich, velvety sauce, tender pasta, and a dash of garlic for a truly indulgent experience.
+            </p>
+            <div class="d-flex justify-content-between align-items-center" data-aos="fade-up">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-left: 20px; background-color: #F14A00;"><a href="new.html#recipe5">View</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">5 mins</small>
+            </div>
+        </div>
+        
+    </div>
+      
+        <div class="col-md-6 col-lg-4 offer">
+          <div class="service-item position-relative">
+            <div class="icon">
+                <!-- Dessert-related icon -->
+               <img src="images/19.webp" alt="" width="120px" height="100px" style="border-radius: 60%;box-shadow: 2px 2px 5px 5px gray;"data-aos="fade-right">
+            </div>
+            <a href="" >
+                <h3 data-aos="fade-up">Chocolate Lava Cake</h3>
+            </a>
+            <p data-aos="fade-up">
+                Treat yourself to our rich and gooey chocolate lava cake, a heavenly dessert with a molten center that melts in your mouth.
+            </p>
+            <div class="d-flex justify-content-between align-items-center" data-aos="fade-up">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-left: 20px; background-color: #F14A00;"><a href="new.html#recipe5">View</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">5 mins</small>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6 offer" >
+          <div class="service-item position-relative">
+            <div class="icon">
+                <!-- Cake-related icon -->
+                <img src="images/bur2.png" alt="" width="120px" height="100px" style="border-radius: 60%;box-shadow: 2px 2px 5px 5px gray;" data-aos="fade-right">
+            </div>
+            <a href="">
+              <h3 data-aos="fade-up">Juicy Beef Burger</h3>
+          </a>
+          <p data-aos="fade-up">
+              Bite into our juicy beef burger, layered with fresh lettuce, ripe tomatoes, melted cheese, and a special sauce.
+          </p>
+          <div class="d-flex justify-content-between align-items-center" data-aos="fade-up">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-left: 20px; background-color: #F14A00;"><a href="new.html#recipe5">View</a></button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-muted">5 mins</small>
+          </div>
+          
+        </div>
+
+        </div>
+
+          <div class="col-lg-4 col-md-6 offer">
+            <div class="service-item position-relative">
+              <div class="icon">
+                  <!-- Spaghetti-related icon -->
+                  <img src="images/s1.jpeg" alt="" width="120px" height="100px" style="border-radius: 60%;box-shadow: 2px 2px 5px 5px gray;"
+                  data-aos="fade-right">
+              </div>
+              <a href="">
+                  <h3 data-aos="fade-up">Classic Spaghetti</h3>
+              </a>
+              <p data-aos="fade-up">
+                  Enjoy our perfectly cooked spaghetti tossed in a rich tomato sauce, topped with fresh herbs and a sprinkle.</p>
+                  <div class="d-flex justify-content-between align-items-center"data-aos="fade-up">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-left: 20px; background-color: #F14A00;"><a href="new.html#recipe5">View</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">5 mins</small>
+                  </div>
+          </div> 
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 offer">
+            <div class="service-item position-relative">
+              <div class="icon">
+                  <!-- Pizza-related icon -->
+                <img src="images/17.jpg" alt="" width="120px" height="100px" style="border-radius: 60%;box-shadow: 2px 2px 5px 5px gray;"data-aos="fade-right">
+              </div>
+              <a href="">
+                  <h3 data-aos="fade-up">Margherita Pizza</h3>
+              </a>
+              <p data-aos="fade-up">
+                  Relish our classic Margherita pizza topped with fresh mozzarella, ripe tomatoes, and a sprinkle of basil.
+              </p>
+              <div class="d-flex justify-content-between align-items-center"data-aos="fade-up">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-left: 20px; background-color: #F14A00;"><a href="new.html#recipe5">View</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">5 mins</small>
+              </div>
+          </div>
+          </div>
+        </div>
+</div>
+<!-- End Service Item -->
+
+
+<!-- Features Section -->
+<section id="features" class="features section">
+  <div class="container py-5">
+    <ul class="nav nav-tabs row  d-flex"  data-aos="fade-up" data-aos-delay="100">
+      <li class="nav-item special col-lg-3  col-sm-5 offset-sm-2 ">
+        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+          <i class="bi bi-brightness-high"></i>
+          <h4>Spaghetti Carbonara</h4>
+        </a>
+      </li>
+      <li class="nav-item col-lg-3 col-sm-5">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+          <i class="bi bi-brightness-high icon"></i>
+          <h4>Grilled Chicken</h4>
+        </a>
+      </li>
+      <li class="nav-item col-lg-3 col-sm-5 offset-sm-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+          <i class="bi bi-brightness-high"></i>
+          <h4 >Chocolate Lava Cake</h4>
+        </a>
+      </li>
+      <li class="nav-item col-lg-3  col-sm-5">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+          <i class="bi bi-brightness-high"></i>
+          <h4>Margherita Pizza</h4>
+        </a>
+      </li>
+    </ul><!-- End Tab Nav -->
+
+    <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+      <div class="tab-pane fade active show" id="features-tab-1">
+        <div class="row pt-5">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+            <h3>Spaghetti Carbonara – A Classic Delight</h3>
+            <p class="fst-italic">
+              A rich and creamy pasta dish made with eggs, cheese, pancetta, and pepper. A true Italian classic that will leave you craving more!
+            </p>
+              <ul>
+                <h5>Ingredients:</h5>
+                <li><i class="bi bi-check2-all"style="color: #F14A00;"></i> <span>Spaghetti (400g)</span></li>
+                <li><i class="bi bi-check2-all"style="color: #F14A00;"></i> <span>Pancetta or Bacon (100g, chopped)</span></li>
+                <li><i class="bi bi-check2-all"style="color: #F14A00;"></i> <span>Fresh Eggs (2 large)</span></li>
+                <li><i class="bi bi-check2-all"style="color: #F14A00;"></i> <span>Parmesan Cheese (1 cup, grated)</span></li>
+                <li><i class="bi bi-check2-all"style="color: #F14A00;"></i> <span>Garlic (1 clove, minced)</span></li>
+                <li><i class="bi bi-check2-all"style="color: #F14A00;"></i> <span>Black Pepper (to taste)</span></li>
+                <li><i class="bi bi-check2-all"style="color: #F14A00;"></i> <span>Salt (for pasta water)</span></li>
+              </ul>
+            <p>
+              This delightful dish is a customer favorite at <strong>My Cooking Daity</strong> made with the finest ingredients to bring the authentic Italian taste to your table.
+            </p>
+          </div>
+          <div class="col-lg-6  col-md-8 order-1 order-lg-2 text-center">
+            <img src="images/f1a.jpg" alt="Spaghetti Carbonara" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content Item -->
+      
+
+      <div class="tab-pane fade" id="features-tab-2">
+        <div class="row pt-5">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+            <h3>Grilled Chicken – Tender and Flavorful</h3>
+            <p class="fst-italic">
+              A juicy and perfectly grilled chicken dish, seasoned with a blend of herbs and spices, offering a tender and flavorful experience.
+            </p>
+            <ul>
+              <h5>Ingredients:</h5>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Chicken Breasts (2 pieces, boneless)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Olive Oil (2 tbsp)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Garlic (2 cloves, minced)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Lemon (1, juiced)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Fresh Rosemary (1 sprig)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Salt & Black Pepper (to taste)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Paprika (1 tsp)</span></li>
+            </ul>
+            <p>
+              This succulent Grilled Chicken is a perfect choice for a healthy yet satisfying meal at <strong>My Cooking Dairy</strong>, where flavor meets quality.
+            </p>
+          </div>
+          
+          <div class="col-lg-6  col-md-8 order-1 order-lg-2 text-center">
+            <img src="images/f1c.jpg" height="400px" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content Item -->
+
+      <div class="tab-pane fade" id="features-tab-3">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-3">
+            <h3>Chocolate Lava Cake – Decadent & Irresistible</h3>
+            <p class="fst-italic">
+              Indulge in our rich and gooey chocolate lava cake with a molten center, the perfect dessert for any chocolate lover!
+            </p>
+            <ul>
+              <h5>Ingredients:</h5>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Dark Chocolate (200g, chopped)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Butter (1/2 cup, melted)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>All-Purpose Flour (1/4 cup)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Powdered Sugar (1/2 cup)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Eggs (2 large)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Vanilla Extract (1 tsp)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Salt (1 pinch)</span></li>
+            </ul>
+            <p>
+              This irresistible chocolate lava cake is a favorite dessert at <strong>My Cooking Dairy</strong>, offering a rich and gooey center with every bite!
+            </p>
+          </div>
+          
+          <div class="col-lg-6  col-md-8 order-1 order-lg-2 text-center mt-lg-5">
+            <img src="images/fe.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content Item -->
+
+      <div class="tab-pane fade" id="features-tab-4">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+            <h3>Margherita Pizza – A Taste of Italy</h3>
+            <p class="fst-italic">
+              A simple yet flavorful pizza made with fresh mozzarella, tomatoes, and basil, offering the perfect balance of taste and authenticity.
+            </p>
+            <ul>
+              <h5>Ingredients:</h5>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Pizza Dough (1 ball)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Fresh Mozzarella (200g, sliced)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Fresh Tomatoes (2, sliced)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Fresh Basil Leaves (a handful)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Olive Oil (1 tbsp)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Salt & Black Pepper (to taste)</span></li>
+              <li><i class="bi bi-check2-all" style="color: #F14A00;"></i> <span>Tomato Sauce (1/2 cup)</span></li>
+            </ul>
+            <p>
+              Enjoy the authentic flavors of Italy with our <strong>Margherita Pizza</strong> at <strong>My Cooking Dairy</strong>, where each bite takes you straight to the heart of Italy.
+            </p>
+          </div>
+          
+          <div class="col-lg-6  col-md-8 order-1 order-lg-2 text-center">
+            <img src="images/fff.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Features Section --> 
+
+
+
+
+<!-- Faq -->
+<div class="container-fluid mt-5">
+  <div id="accordion-faq">
+      <div style="text-align: center; font-family: Arial, sans-serif; display: inline-block;">
+          <span class="span" style="letter-spacing: 2px; font-size: 15px; color: #555; vertical-align: middle;">Recipe Tips</span>
+          <span style="display: inline-block; width: 50px; height: 2px; background-color: #ff5c5c; margin-left: 10px; vertical-align: middle;"></span>
+        </div>
+        <h2 style="font-size: 24px; font-weight: 700; color: #333;">Ingredient Substitutes</h2>
+  </div>
+      <!-- Card 1 -->
+      <div class="card no-border" id="faq" >
+          <div class="card-header" id="headingOne">
+              <p class="faq-question">
+                  <!-- Down button on the left -->
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <i class="bi bi-arrow-down" aria-hidden="true"style="color: #F14A00;"></i>
+                  </button>
+                  <b>What’s the secret to making fluffy pancakes?</b>
+              </p>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion-faq">
+              <div class="card-body faq-body">
+               <p>The secret to making fluffy pancakes lies in a few key steps. First, avoid overmixing the batter—stir just until the dry ingredients are combined, leaving some lumps, as overmixing can make the pancakes dense. Using buttermilk or a homemade alternative (1 cup of milk mixed with 1 tablespoon of vinegar or lemon juice) helps create air pockets for fluffiness. Letting the batter rest for 5-10 minutes before cooking allows the baking powder to activate fully. Finally, cook the pancakes on medium heat to ensure they cook evenly without burning. These steps will give you light, airy, and perfectly fluffy pancakes every time!</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card no-border"  id="faq">
+          <div class="card-header" id="headingTwo">
+              <p class="faq-question">
+                  <!-- Down button on the left -->
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="bi bi-arrow-down" aria-hidden="true"style="color: #F14A00;"></i>
+                  </button>
+                  <b>Can I substitute heavy cream with something healthier?</b>
+              </p>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-faq">
+              <div class="card-body faq-body">
+               <p> You can substitute heavy cream with healthier options depending on the recipe. For a creamy texture, mix equal parts plain Greek yogurt and milk, which works well in soups and pasta sauces. Coconut cream is another excellent alternative, especially for desserts and curries, as it’s dairy-free and rich. If you need a vegan option, blend soaked cashews with water to create a smooth, creamy substitute. For baking or general cooking, combine ¾ cup of milk with ¼ cup of melted butter as a lighter alternative. These substitutes provide a similar richness while being healthier than traditional heavy cream.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card no-border"  id="faq">
+          <div class="card-header" id="headingThree">
+              <p class="faq-question">
+                  <!-- Down button on the left -->
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="bi bi-arrow-down" aria-hidden="true" style="color: #F14A00;"></i>
+                  </button>
+                  <b>How can I prevent pasta from sticking together after cooking?</b>
+              </p>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-faq">
+              <div class="card-body faq-body">
+                To prevent pasta from sticking together after cooking, start by stirring it in boiling water during the first few minutes, as this prevents the starch from causing clumps. Add 1-2 tablespoons of salt per 4 quarts of water to season the pasta and reduce sticking. After draining, avoid rinsing the pasta unless you're preparing a cold pasta salad, as rinsing removes the starch that helps sauces cling to the pasta. Finally, immediately toss the pasta with a drizzle of olive oil or mix it with the sauce to keep it smooth and separate.
+              
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+<footer class="container-fluid py-5  text-white mt-5 p-2 ">
+  <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="contact">
+              <h2>About</h2>
+              <div class="about">
+              <p><a href=""><i class="bi bi-geo-alt text-white px-1" style="width: 100px; height: 40px;position: relative;top: 4px; left: 2px;right: 5px;"></i>
+                Rawalakot, AJK</a></p>
+              <p><a href=""><i class="bi bi-telephone text-white px-1 " style="width: 100px; height: 40px;position: relative;top: 4px; left: 2px; right: 5px;"></i>+9498279627</a></p>
+              <p><a href=""><i class="bi bi-envelope text-white px-1" style="width: 100px; height: 40px;position: relative;top: 4px; left: 2px;right: 5px;"></i> www.mycookingdiary.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 info">
+          <h2> Informations</h2>
+          <p style="text-align: justify;">
+            Here, we share a love for delicious, homemade food and simple, easy-to-follow recipes. From quick weeknight dinners to indulgent desserts, our goal is to inspire you to get creative and enjoy the art of cooking.Join us on this flavorful journey. 
+
+          </p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 " style="padding-left: 70px;">
+          <h2>Newsletter</h2>
+          <input style="width: 220px; height: 30px;" type="text" placeholder="Enter Your Email"><br><br>
+          <button class="btn lastbutton " style="background-color: #F14A00; color: white;">Subscribe</button><br><br>
+          <div class="social-links d-flex">
+              <a href=""><i class="bi bi-twitter  text-white px-2 py-1 m-1 rounded-pill" style="width: 100px; height: 60px;"></i></a>
+              <a href=""><i class="bi bi-facebook  text-white px-2 py-1 m-1 rounded-pill" style="width: 100px; height: 60px;"></i></a>
+              <a href=""><i class="bi bi-instagram  text-white px-2 py-1 m-1 rounded-pill" style="width: 100px; height: 60px;"></i></a>
+              <a href=""><i class="bi bi-skype text-white px-2 py-1 m-1 rounded-pill" style="width: 100px; height: 60px;"></i></a>
+              <a href=""><i class="bi bi-whatsapp  text-white px-2 py-1 m-1 rounded-pill" style="width: 100px; height: 60px;"></i></a>
+            </div>
+            
+      </div>
+      </div>
+      <div class="row text-center">
+          <div class="col-md-12">
+              <div class="last"></div>
+              <div class="row mt-3">
+                  <div class="col pt-3 text-muted">
+                      <b>Copyright All Right Reserved</b>
+                  </div>
+          </div>
+          </div>
+      </div>
+</footer>
+
+</div>
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.1.0/dist/js/glightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.4.5/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"></script>
+<!-- Main JS File -->
+<script src="js/main.js"></script>
+<script>
+AOS.init({
+duration:2000,
+once:true,
+})
+</script>
+
+</body>
+</html>

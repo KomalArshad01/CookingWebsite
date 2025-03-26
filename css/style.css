@@ -1,0 +1,1019 @@
+
+:root{
+ --header-bg:black;
+ --footer-bg:black;
+  --text-color:white;
+  --nav-color: white; 
+  --nav-hover-color: #F14A00;
+  --nav-hover-text-color:white; 
+  --header-text:#F14A00;
+  --button-bg:#F14A00;
+  --highlight-text:#F14A00;
+  --calltoaction-bg:black;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; /* Horizontal scroll ko remove kare ga */
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap; /* Items wrap ho jayen ge */
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+   
+:root {
+    scroll-behavior: smooth;
+  }
+  /* Head section start */
+
+  .navbar-nav .nav-link:hover
+  {
+      background-color: #F14A00;
+      border-radius: 20px;
+  }
+  .navbar-nav .nav-link
+  {
+      color:white;
+      margin-left: 2px;
+  }
+  .navbar
+  {
+      background: black;
+  }
+  
+ a{
+  color: #F14A00;
+ }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Head section close */
+
+/* Make sure the hero section takes full width and height */
+.hero {
+  color: white;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent any overflow */
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure carousel container (hero-carousel) spans full width */
+#hero-carousel {
+  width: 100vw; /* Full width of viewport */
+  height: 100%; /* Full height */
+  position: relative;
+  display: flex;
+  margin-top: 9%;
+}
+
+/* Each carousel item should span the full width */
+.hero .carousel-item {
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Full width for each carousel item */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero .slide1 {
+  background-image: url(../images/k1.jpg);
+  color: black;
+}
+
+.hero .carousel-item:nth-child(2) {
+  background-image: url(../images/2.jpeg);
+
+}
+
+.hero .carousel-item:nth-child(3) {
+  background-image: url(../images/back2.jpg);
+ 
+}
+
+/* Ensure body and html elements have no margin or padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.hero .carousel-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  min-height: 90vh;
+  padding-top: 60px;
+}
+
+.hero h2 {
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero h2 span {
+  text-decoration: underline;
+}
+.hero p {
+  max-width: 80%;
+  /* animation-delay: 0.4s; */
+  margin: 0 auto 30px auto;
+}
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  width: 10%;
+}
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+}
+
+
+
+  .hero .btn-get-started {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    /* transition: 0.5s; */
+    line-height: 1;
+    margin: 10px;
+    /* animation-delay: 0.8s; */
+    color: var(--default-color);
+    border: 2px solid var(--accent-color);
+  }
+  
+  .hero .btn-get-started:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    text-decoration: none;
+  }
+
+
+  /* Section 2  Start*/
+  #featured-dishes {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+  }
+  
+
+  #featuredCarousel .card {
+    border: none;
+    border-radius: 10px;
+     /* padding: 20px; */
+    margin: 0;
+    box-shadow: 0 8px 24px rgba(2, 0.4, 0, 0.2);
+}
+
+  
+  #featuredCarousel .card img{
+    border-radius: 20px 20px 0px 0px; 
+  }
+
+  #featuredCarousel .btn {
+    background-color:var(--button-bg);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+ #featuredCarousel .btn {
+  background-color: var(--button-bg);
+  color: #ffffff; /* Button text color */
+  transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition for background and text color */
+}
+
+#featuredCarousel .btn:hover {
+  background-color: #ff6347; /* Change button background color on hover (e.g., Tomato color) */
+  color: #000000; /* Change button text color on hover */
+}
+
+
+/* section3 end */
+
+
+/* Cooking section */
+.cooking{
+  margin-left: 2%;
+}
+
+/* Style for the button */
+.btn.read-more {
+  background-color: #F14A00;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.btn.read-more:hover {
+  background-color:#ff6347; /* Slightly darker orange */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+
+  
+.call-to-action{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background-color: var(--calltoaction-bg);
+}
+
+.call-to-action .sale{
+  color: var(--highlight-text);
+}
+  .service-item{
+    margin-left: 40px;
+    position: relative;
+    padding: 30px 30px 40px 60px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 2px 15px 5px gray;
+    margin-bottom: 15%;
+  }
+
+  .service-item .icon{
+    position: absolute;
+    left: -47px;
+    margin-top: 22px;
+  }
+  /* .service-item i{
+    font-size: 60px;
+  } */
+  .service-item img{
+    font-size: 60px;
+  }
+  .service-item h3{
+    padding-left: 20px;
+    font-weight: 700;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+
+  .service-item a{
+    color: black;
+    font-weight: 700px;
+    text-decoration: none;
+  }
+  .service-item a:hover{
+    text-decoration: none;
+    color: black;
+  }
+  .service-item p{
+    text-align: justify;
+    font-size: 14px;
+    padding-left: 20px;
+
+  }
+
+
+
+  .faq-button {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.faq-button:focus {
+    outline: none;
+}
+
+.faq-question {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+.faq-body {
+    padding: 10px;
+}
+
+.faq-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.faq-question {
+    background-color: white;
+    display: flex;
+}
+.no-border {
+    border: none;
+    box-shadow: none; /* Optionally remove shadow */
+}
+
+
+.no-border {
+    border: none;
+    box-shadow: none;
+}
+
+.card.no-border {
+    border: none;
+    box-shadow: none;
+    background: none; /* Optional: removes card background */
+}
+
+.card-header.no-border {
+    border: none;
+    box-shadow: none;
+}
+
+footer{
+  background-color: var(--footer-bg);
+}
+
+footer i{
+  background-color: #F14A00;
+}
+
+/* footer .link{
+  color:#F14A00 ;
+} */
+
+footer .about i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+footer  a {
+  padding-left: 2px;
+  color: white;
+}
+
+.contact{
+  position:relative;
+  top:10px;
+  left:40px;
+  line-height: 10px;
+  margin-left: 20px;
+}
+
+.contact i{
+  position: relative;
+  top: 50px;
+  left: -37px;
+  font-size: 30px;
+}
+
+.team h4,.p{
+  line-height: 10px;
+}
+
+.team{
+  margin:20px 10px;
+}
+
+
+
+.features .nav-link{
+  background-color: white;
+  color: black;
+  padding: 20px 10px;
+  border-radius: 0;
+  display: flex;
+
+}
+  .features .nav-link i{
+     padding-right: 15px;
+     vertical-align: center;
+     font-size: 40px;
+  }
+
+.features .nav-link h4{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+padding-top: 17px;
+}
+.features .nav-link:hover {
+  color:var(--text-color);
+  border-color:var(--highlight-text);
+  border-radius: 20px;
+  height: 110px;
+}
+
+.features .nav-link.active {
+  background: var(--highlight-text);
+  color:white;
+  border-color: var(--accent-color);
+  border-radius: 20px;
+}
+
+/* Second Page */
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 5%;
+}
+.image-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.overlay-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.overlay-text p {
+  font-size: 16px;
+}
+
+.post-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+.post-subtitle {
+  font-size: 15px;
+  color:black;
+}
+.post-image {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+.content {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.recipe-list {
+  margin-top: 20px;
+  list-style-type: none;
+}
+.recipe-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.recipy1 .card1{
+  margin-left: 30px;
+}
+
+ .card1{
+  border-radius: 60px 10px 50px 10px;
+  box-shadow: 5px 5px 10px 5px grey;
+}
+
+.card2{
+  margin-top: 8%;
+  padding-bottom: 4%;
+  background-color: #000000;
+  color: white;
+  padding-top: 2%;
+}
+
+
+
+
+@media (max-width: 1052px) {
+  /* This will apply styles to screens with a width of 1052px or less */
+  #hero {
+    height: 100%; /* Allow the hero to expand to the full height of its parent */
+}
+
+  .hero .carousel-container  h2{
+      font-size: 30px; /* Adjust heading size for smaller screens */
+      line-height: 1.3; /* Optional: Better readability on smaller screens */
+  }
+.about{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#hero {
+  padding: 20px 10px; /* Add some padding for small screens */
+}
+
+/* Adjust text size and layout in carousel */
+.carousel-container h2 {
+  font-size: 24px; /* Reduce font size of title on smaller screens */
+}
+
+.carousel-container p {
+  font-size: 16px; /* Adjust font size of paragraph */
+}
+
+.btn-get-started {
+  padding: 5px 20px; /* Adjust button padding */
+  font-size: 16px; /* Adjust button font size */
+}
+.features .nav-item{
+  margin-bottom: 10px;
+}
+
+}
+
+
+
+
+@media (max-width:992px){
+  .hero .carousel-container{
+      height: 120vh;
+  }
+.header {
+   width: 100%;
+   justify-content: space-around;
+  }
+  .hero .carousel-container  h2{
+      padding-top: 40px;
+      font-size: 30px; /* Adjust heading size for smaller screens */
+      line-height: 1.3; /* Optional: Better readability on smaller screens */
+  }
+ 
+  #featured-dishes {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+  
+
+.carousel-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#heading {
+  padding-top: 0px;
+  font-size: 28px; /* Adjusting heading size */
+}
+
+.carousel-container p {
+  font-size: 12px; /* Slightly reducing paragraph text */
+  padding: 0 15px; /* Adding some padding for better readability */
+}
+
+.btn-get-started {
+  font-size: 16px; /* Adjusting button text size */
+  padding: 10px 20px; /* Adjusting button padding */
+}
+
+  /* Reduce image size if needed */
+  .carousel-item .card img {
+      height: auto; /* Keep images responsive */
+  }
+
+  .services{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .services .service-item{
+    margin: 10px 5px 10px 5px;
+  }
+
+ .tab-content img{
+      padding-left: 26%;
+ }
+
+ footer .info{
+  margin-left: 53px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 500px;
+ }
+
+ .recipy1 .card1{
+  width: 300px;
+  margin:20px 2px 10px 40px;
+ }
+ .carousel-item .card{
+  padding: 20px;
+  width: 320px;
+
+}
+.mydish{
+  margin-left:30% ;
+}
+.dish {
+  margin-bottom: 40px;
+}
+
+.recipy{
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+.recipy .card{
+  text-align: left;
+}
+}
+
+@media (max-width: 768px) {
+  /* Hero section */
+  #hero {
+    padding: 20px 10px;
+    height: 150vh; /* Add padding for small screens */
+  }
+  .navbar-brand h2 {
+    font-size: 18px; /* Smaller font for mobile */
+}
+
+.navbar-nav {
+    margin-top: 10px;
+}
+
+.navbar-nav .nav-link {
+    display: block;
+    padding: 12px 0;
+}
+
+  /* Carousel container adjustments */
+  .carousel-item {
+    width: 100%; 
+    padding: 5px; 
+    text-align: center;
+    min-height: 460px; 
+  }
+
+ 
+  .carousel-container h2 {
+    font-size: 15px;
+    line-height: 1.0; 
+    margin-top: 15px; 
+    padding-top: 20px; 
+  }
+
+
+  /* Adjust button */
+  .btn-get-started {
+    padding: 10px 25px;
+    font-size: 14px; 
+    border-radius: 30px; 
+    margin-top: 20px; 
+  }
+
+  /* Carousel control icons (previous/next) */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 30px; /* Decrease size of previous/next icons */
+    height: 30px;
+  }
+
+
+
+  .card{
+    width: 130px;
+    line-height: 1.0;
+    text-align: center;
+  }
+
+
+  #cooking img{
+    width: 400px;
+    margin-top: 20px;
+  }
+
+ #section .offer{
+   margin: 5px 120px;
+   width: 70%;
+  }
+
+  .tab-content img{
+    padding-right: 25%;
+}
+.services .service-item{
+  margin: 2px;
+}
+.k h2 b{
+ font-size: 10px;
+}
+
+#faq{
+  width: 100%;
+}
+.carousel-item .card{
+  padding: 20px;
+  width: 320px;
+
+}
+.rec{
+  margin-left: 90px;
+  margin-bottom: 17px;
+}
+
+.team img{
+  padding-top: 10px;
+}
+
+.team{
+  margin-left: 180px;
+}
+.mydish{
+  margin-left:25% ;
+}
+.dish {
+  margin-bottom: 40px;
+}
+
+.cooking{
+  margin: 10px 40px 10px 20px;
+  width: 40%;
+}
+.call-to-action{
+  padding: 20px;  
+}
+.call-to-action h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.recipy{
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+.recipy .card{
+  width: 100%;
+  text-align: left;
+}
+
+.post .card{
+  width: 60%;
+  margin-left: 20%;
+}
+}
+
+
+
+
+@media (min-width:576px)and(max-width: 768px) {
+  .col-md-5 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.like h5{
+  text-align: center;
+  margin: 10px;
+}
+.card{
+  margin-left: 23%;
+}
+.card2 img{
+  width: 100px;
+  margin-left: 34%;
+}
+.card2 p{
+  padding-left: 20%;
+}
+
+.post .card{
+  padding: 20px;
+  width: 320px;
+}
+
+.read img{
+  width: 200px;
+  height: 200px;
+  margin-left: 50%;
+  margin-top: 3%;
+}
+.read{
+  padding: 20px;
+}
+.slider1{
+  margin-left: 20%;
+}
+.slider1 .card{
+  margin: 5%;
+}
+.slider2{
+  margin-left: 20%;
+}
+.slider2 .card{
+  margin: 5%;
+}
+
+#cooking{
+  padding: 20px;
+}
+
+.service-item{
+  margin: 20px;
+}
+#faq{
+  width: 70%;
+  text-align: justify;
+}
+
+.pic img{
+  padding-top: 35%;
+}
+
+.container{
+  margin-right: 30px;
+  justify-content: center;
+}
+
+.recipy .card{
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-left: 40%;
+}
+
+.teambanner{
+  width: 100%;
+}
+.teambanner h2{
+  font-size: 20px;
+  text-align: center;
+}
+.teambanner img{
+  padding-top: 60px;
+}
+.team img{
+  padding-top: 10px;
+}
+.team .team1{
+  margin-bottom: 30px;
+}
+
+.mydish{
+  margin-left:20% ;
+}
+.dish {
+  margin-bottom: 40px;
+}
+
+.featured-dishes{
+  padding-top:0px ;
+  margin: 0;
+}
+
+
+.recipy{
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+.recipy .card{
+  width: 100%;
+  text-align: left;
+}
+
+
+
+}
+
+@media (max-width: 576px) {
+  .head{
+    width: 85%;
+      margin-right: -20%;
+  }
+  .logo {
+      display: none;
+  }
+  #heading {
+    display: none;
+}
+p{
+  padding-top: 10px;
+}
+.m{
+color: white;
+}
+
+.featured-dishes{
+  justify-content: center;
+}
+.dish{
+  margin-left: -60px;
+}
+.k{
+  display: none;
+}
+
+.offer {
+  width: 100% !important;  /* Make each item take full width */
+  display: block; 
+  align-content: center;
+      /* Ensure proper stacking */
+      margin-bottom: 20px;
+}
+.kk{
+  margin-right: -5px;
+  margin-bottom: 15px;
+}
+.h{
+  font-size: 15px;
+}
+.hh{
+  margin-top: 35%;
+}
+
+.rec{
+  width: 65%;
+}
+.hhh{
+  font-size:15px ;
+}
+.recipy{
+  width: 65%;
+}
+.t{
+  display: none;
+}
+.our{
+  line-height: 18px;
+}
+
+.team{
+  width: 70%;
+  margin-left: 17%;
+}
+.line{
+  margin-left: 30px;
+}
+.s{
+  width: 80%;
+  margin-left: -50px;
+}
+
+.finger{
+  font-size: 15px;
+}
+
+.p{
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+.delicious{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.call-to-action img{
+display: none;
+}
+.faq-body{
+  text-align: justify;
+}
+
+}
+
+
+
+
+
+
+
+
+ 
